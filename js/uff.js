@@ -61,6 +61,7 @@ function promoCode() {
         if (promoCodeValue == 'stevekaku') {
             document.getElementById('promo-code').value = '';
             calculatePromo();
+            document.getElementById('promo-code-btn').disabled = true;
         }
     })
 }
@@ -80,3 +81,4 @@ catchTheElement('1tb-btn');
 catchTheElement('free-delivery-btn');
 catchTheElement('cost-delivery-btn');
 promoCode();
+
